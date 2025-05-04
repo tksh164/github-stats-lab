@@ -25,8 +25,8 @@ jobs:
           .github/scripts/collectdownloadcount.ps1 -TargetRepoFilePath '.github/scripts/target-repos.json' -OutputFolderPath 'statistics/downloads'
 
       - name: Commit and Push collected data
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #env:
+        #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           output_dir="statistics/downloads"
           if [ -n "$(git status --porcelain $output_dir)" ]; then
