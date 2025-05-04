@@ -1,11 +1,9 @@
 name: Collect download count of GitHub repos
 
 on:
-  #schedule:
-    # Runs every day
-    #- cron: ''
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:     # Allows you to run this workflow manually from the Actions tab
 
 permissions:
   contents: write
