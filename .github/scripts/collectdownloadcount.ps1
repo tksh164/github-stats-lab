@@ -52,7 +52,7 @@ foreach ($target in $targets) {
         }
     }
 
-    # Remove the duplicated results. If data and tag name pair is the same, it is considered as a duplicate.
+    # Remove the duplicated results. If date and tag name pair is the same, it is considered as a duplicate.
     $dateTagNameBag = @{}
     $result | ForEach-Object -Process {
         $dateTagName = $_.date + '_' + $_.tagName
