@@ -1,4 +1,4 @@
-name: Collect download count of GitHub repos
+name: Collect download count
 
 on:
   schedule:
@@ -27,12 +27,14 @@ jobs:
           .github/scripts/collectdownloadcount.ps1 -TargetRepoFilePath $env:TARGET_REPO_FILE_PATH -OutputFolderPath $env:OUTPUT_DIR_PATH
 
       - name: Commit and Push collected data
+        env:
+          COMMIT_MESSAGE: Update download count data
         run: |
           if [ -n "$(git status --porcelain $OUTPUT_DIR_PATH)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add $OUTPUT_DIR_PATH
-            git commit -m "Update download count data."
+            git commit -m "$COMMIT_MESSAGE"
             git push
           else
             echo "No changes to commit."
