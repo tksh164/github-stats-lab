@@ -1,4 +1,4 @@
-name: Collect star count of GitHub repos
+name: Collect star count
 
 on:
   schedule:
@@ -28,7 +28,7 @@ jobs:
 
       - name: Commit and Push collected data
         env:
-          COMMIT_MESSAGE: Update star count data.
+          COMMIT_MESSAGE: Update star count data
         run: |
           if [ -n "$(git status --porcelain $OUTPUT_DIR_PATH)" ]; then
             git config user.name "github-actions[bot]"
