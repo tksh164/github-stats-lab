@@ -53,12 +53,12 @@ foreach ($target in $targets) {
     }
 
     # Remove the duplicated results. If date and tag name pair is the same, it is considered as a duplicate.
-    $dateTagNameBag = @{}
+    $dedupBag = @{}
     $result | ForEach-Object -Process {
-        $dateTagName = $_.date + '_' + $_.tagName
-        $dateTagNameBag[$dateTagName] = $_
+        $dedupKey = $_.date + '_' + $_.tagName
+        $dedupBag[$dedupKey] = $_
     }
-    $newResult = $dateTagNameBag.Values | Sort-Object -Property 'date', 'tagName' 
+    $newResult = $dedupBag.Values | Sort-Object -Property 'date', 'tagName'
 
     # Write the result to a file.
     if ($newResult.Length -eq 1) {
