@@ -2,7 +2,7 @@ name: Collect star count of GitHub repos
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+    - cron: '0 1 * * *'  # Runs every day at 01:00 UTC
   workflow_dispatch:     # Allows you to run this workflow manually from the Actions tab
 
 permissions:
@@ -27,12 +27,14 @@ jobs:
           .github/scripts/collectstarcount.ps1 -TargetRepoFilePath $env:TARGET_REPO_FILE_PATH -OutputFolderPath $env:OUTPUT_DIR_PATH
 
       - name: Commit and Push collected data
+        env:
+          COMMIT_MESSAGE: Update star count data.
         run: |
           if [ -n "$(git status --porcelain $OUTPUT_DIR_PATH)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add $OUTPUT_DIR_PATH
-            git commit -m "Update download count data."
+            git commit -m "$COMMIT_MESSAGE"
             git push
           else
             echo "No changes to commit."
