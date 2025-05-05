@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  TARGET_REPO_FILE_PATH: .github/scripts/target-repos.json
+  TARGET_REPO_FILE_PATH: .github/scripts/collectdownloadcount-target-repos.json
   OUTPUT_DIR_PATH: statistics/downloads
 
 jobs:
