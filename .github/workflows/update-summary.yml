@@ -1,4 +1,4 @@
-name: Update profile README
+name: Update stats summary
 
 on:
   schedule:
@@ -19,16 +19,16 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v6
 
-      - name: Run PowerShell script to update summary stats
+      - name: Run PowerShell script to update Stats summary
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.PROFILE_README_TOKEN }}
         run: |
           .github/scripts/update-summary.ps1 -TemplateFilePath $env:TEMPLATE_FILE_PATH -OutputFilePath $env:OUTPUT_FILE_PATH
 
-      - name: Commit and Push updated summary stats
+      - name: Commit and Push updated Stats summary
         env:
-          COMMIT_MESSAGE: Update summary stats
+          COMMIT_MESSAGE: Update stats summary
         run: |
           if [ -n "$(git status --porcelain $OUTPUT_FILE_PATH)" ]; then
             git config user.name "github-actions[bot]"
