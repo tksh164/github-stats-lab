@@ -22,7 +22,7 @@ jobs:
       - name: Run PowerShell script to update Stats summary
         shell: pwsh
         env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_README_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STATS_SUMMARY_TOKEN }}
         run: |
           .github/scripts/update-summary.ps1 -TemplateFilePath $env:TEMPLATE_FILE_PATH -OutputFilePath $env:OUTPUT_FILE_PATH
 
