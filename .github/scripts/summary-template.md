@@ -7,11 +7,11 @@
 | [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | {{github:repo,tksh164,aumid-stopgap-tools,description}} | {{github:repo,tksh164,aumid-stopgap-tools,language}} | {{github:repo,tksh164,aumid-stopgap-tools,starsCount}} | {{github:repo,tksh164,aumid-stopgap-tools,forksCount}} | {{github:repo,tksh164,aumid-stopgap-tools,watchingCount}} | {{github:repo,tksh164,aumid-stopgap-tools,totalViews}} | {{github:repo,tksh164,aumid-stopgap-tools,uniqueVisitors}} | {{github:repo,tksh164,aumid-stopgap-tools,downloadCount}} |
 | [HCI Lab](https://github.com/tksh164/hci-lab) | {{github:repo,tksh164,hci-lab,description}} | {{github:repo,tksh164,hci-lab,language}} | {{github:repo,tksh164,hci-lab,starsCount}} | {{github:repo,tksh164,hci-lab,forksCount}} | {{github:repo,tksh164,hci-lab,watchingCount}} | {{github:repo,tksh164,hci-lab,totalViews}} | {{github:repo,tksh164,hci-lab,uniqueVisitors}} | n/a |
 
-- :speech_balloon - Description of the repository.
-- :page_with_curl - The main language of the repository.
-- :star - The star count of the repository.
-- :trident - The fork count of the respository.
-- :telescope - The watching count of the repository.
-- :eyes - The total views in last 14 days of the repository.
-- :bust_in_silhouette - The unique visitors in last 14 days of the respository.
-- :arrow_down - The total download count so far of the released assets of the repository.
+- :speech_balloon: - Description of the repository.
+- :page_with_curl: - The main language of the repository.
+- :star: - The star count of the repository.
+- :trident: - The fork count of the respository.
+- :telescope: - The watching count of the repository.
+- :eyes: - The total views in last 14 days of the repository.
+- :bust_in_silhouette: - The unique visitors in last 14 days of the respository.
+- :arrow_down: - The total download count so far of the released assets of the repository.
