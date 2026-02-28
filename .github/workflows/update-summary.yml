@@ -22,8 +22,8 @@ jobs:
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.STATS_SUMMARY_TOKEN }}
-          SCRIPT_FILE_PATH: .github/scripts/update-summary.ps1
-          TEMPLATE_FILE_PATH: .github/scripts/summary-template.md
+          SCRIPT_FILE_PATH: .github/scripts/stats-summary/update-summary.ps1
+          TEMPLATE_FILE_PATH: .github/scripts/stats-summary/summary-template.md
         run: |
           & $env:SCRIPT_FILE_PATH -TemplateFilePath $env:TEMPLATE_FILE_PATH -OutputFilePath $env:OUTPUT_FILE_PATH
 
