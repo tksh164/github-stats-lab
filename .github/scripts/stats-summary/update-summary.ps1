@@ -119,7 +119,7 @@ function Get-GitHubActionContext
         [string] $ServiceParam
     )
 
-    $split = $ServiceParam.Split(',')
+    $split = $ServiceParam.Split('/')
     return [PSCustomObject]@{
         Api      = $split[0]
         Owner    = $split[1]
