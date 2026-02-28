@@ -9,7 +9,6 @@ permissions:
   contents: write
 
 env:
-  TARGET_REPO_FILE_PATH: .github/scripts/collectdownloadcount-target-repos.json
   OUTPUT_DIR_PATH: statistics/downloads
 
 jobs:
@@ -23,16 +22,20 @@ jobs:
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCRIPT_FILE_PATH: .github/scripts/download-count/collectdownloadcount.ps1
+          TARGET_REPO_FILE_PATH: .github/scripts/download-count/collectdownloadcount-target-repos.json
         run: |
-          .github/scripts/collectdownloadcount.ps1 -TargetRepoFilePath $env:TARGET_REPO_FILE_PATH -OutputFolderPath $env:OUTPUT_DIR_PATH
+          & $env:SCRIPT_FILE_PATH -TargetRepoFilePath $env:TARGET_REPO_FILE_PATH -OutputFolderPath $env:OUTPUT_DIR_PATH
 
       - name: Commit and Push collected data
         env:
-          COMMIT_MESSAGE: Update download count data
+          COMMIT_USER_NAME: github-actions[bot]
+          COMMIT_USER_EMAIL: github-actions[bot]@users.noreply.github.com
+          COMMIT_MESSAGE: Update star count data
         run: |
           if [ -n "$(git status --porcelain $OUTPUT_DIR_PATH)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git config user.name "$COMMIT_USER_NAME"
+            git config user.email "$COMMIT_USER_EMAIL"
             git add $OUTPUT_DIR_PATH
             git commit -m "$COMMIT_MESSAGE"
             git push
