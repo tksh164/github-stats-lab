@@ -25,7 +25,7 @@ jobs:
           SCRIPT_FILE_PATH: .github/scripts/update-summary.ps1
           TEMPLATE_FILE_PATH: .github/scripts/summary-template.md
         run: |
-          $env:SCRIPT_FILE_PATH -TemplateFilePath $env:TEMPLATE_FILE_PATH -OutputFilePath $env:OUTPUT_FILE_PATH
+          & $env:SCRIPT_FILE_PATH -TemplateFilePath $env:TEMPLATE_FILE_PATH -OutputFilePath $env:OUTPUT_FILE_PATH
 
       - name: Commit and Push updated stats summary
         env:
