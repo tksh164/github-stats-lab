@@ -6,7 +6,7 @@
 | [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 2 | 2 | 31 | 16 | 3726 |
 | [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 21 | 2 | 1 | 31 | 15 | 224 |
 | [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 4 | 1 | 2 | 140 | 11 | n/a |
-| [Telemetry](https://github.com/tksh164/telemetry) |  |  | 0 | 0 | 0 | 0 | 0 | 0 |
+| [Telemetry](https://github.com/tksh164/telemetry) |  |  | 0 | 0 | 0 | 0 | 0 | 1 |
 
 - :speech_balloon: - Description of the repository.
 - :page_with_curl: - The main language of the repository.
