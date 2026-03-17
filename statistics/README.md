@@ -2,11 +2,11 @@
 
 | Repository | :speech_balloon: | :page_with_curl: | :star: | :trident: | :telescope: | :eyes: | :bust_in_silhouette: | :arrow_down: |
 | ---- | ---- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 17 | 3 | 1 | 46 | 13 |416 |
+| [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 17 | 3 | 1 | 44 | 11 | 416 |
 | [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 2 | 2 | 10 | 5 | 3728 |
-| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 22 | 2 | 1 | 28 | 14 | 230 |
-| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 4 | 1 | 2 | 96 | 11 | n/a |
-| [Telemetry](https://github.com/tksh164/telemetry) |  |  | 0 | 0 | 0 | 1 | 1 | 1 |
+| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 22 | 2 | 1 | 41 | 14 | 230 |
+| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 4 | 1 | 2 | 96 | 11 | Azure Local: 0 <br/> WS HCI: 0 <br/> Total: 0 |
+| [Telemetry](https://github.com/tksh164/telemetry) |  |  | 0 | 0 | 0 | 4 | 1 | 1 |
 
 - :speech_balloon: - Description of the repository.
 - :page_with_curl: - The main language of the repository.
