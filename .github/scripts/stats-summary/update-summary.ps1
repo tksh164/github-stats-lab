@@ -31,7 +31,12 @@ function Get-PlaceholderContext
     )
 
     $trimedPlaceholder = $Placeholder.Trim('{', '}')
-    $separatorPos = $trimedPlaceholder.Trim('{', '}').IndexOf(':')
+    $separatorPos = $trimedPlaceholder.IndexOf(':')
+
+    # Example
+    # Placeholder: {{github:repo/tksh164/alter-rdp-client/downloadCount}}
+    # Service: github
+    # ServiceParam: repo/tksh164/alter-rdp-client/downloadCount
     return [PSCustomObject]@{
         Service      = $trimedPlaceholder.Substring(0, $separatorPos)
         ServiceParam = $trimedPlaceholder.Substring($separatorPos + 1)
@@ -88,7 +93,7 @@ function Invoke-GitHubAction
                     return $result.WatchingCount
                 }
                 'downloadCount' {
-                    $result = Invoke-GitHubRestApiGetReleases -Owner $context.Owner -Repo $context.Repo
+                    $result = Invoke-GitHubRestApiGetReleases -Owner $context.Owner -Repo $context.Repo -TagName $context.Detail1 -AssetName $context.Detail2
                     return $result.DownloadCount
                 }
                 'uniqueVisitors' {
@@ -119,13 +124,26 @@ function Get-GitHubActionContext
         [string] $ServiceParam
     )
 
-    $split = $ServiceParam.Split('/')
-    return [PSCustomObject]@{
-        Api      = $split[0]
-        Owner    = $split[1]
-        Repo     = $split[2]
-        Property = $split[3]
+    $parts = $ServiceParam.Split('/')
+    $context = [PSCustomObject] @{
+        Api      = $parts[0]
+        Owner    = $parts[1]
+        Repo     = $parts[2]
+        Property = $parts[3]
+        Detail1  = $null
+        Detail2  = $null
     }
+    if ($parts.Length -ge 5) {
+        $context.Detail1 = $parts[4]
+    }
+    if ($parts.Length -ge 6) {
+        $context.Detail2 = $parts[5]
+    }
+
+    Write-Host $ServiceParam
+    $context | Out-String | Write-Host
+
+    return $context
 }
 
 # Cache REST API result.
@@ -191,13 +209,21 @@ function Invoke-GitHubRestApiGetReleases
         [string] $Owner,
 
         [Parameter(Mandatory = $true)]
-        [string] $Repo
+        [string] $Repo,
+
+        [Parameter(Mandatory = $false)][AllowEmptyString()]
+        [string] $TagName = '',
+
+        [Parameter(Mandatory = $false)][AllowEmptyString()]
+        [string] $AssetName = ''
     )
 
-    $cacheKey = 'repos/{0}/{1}/releases' -f $Owner, $Repo
+    $cacheKey = 'repos/{0}/{1}/releases/{2}/{3}' -f $Owner, $Repo, $TagName, $AssetName
     if ($GitHubRestApiResultCache.ContainsKey($cacheKey)) {
         return $GitHubRestApiResultCache[$cacheKey]
     }
+
+    Write-Host $cacheKey
 
     $result = [PSCustomObject] @{
         DownloadCount = 0
@@ -214,12 +240,23 @@ function Invoke-GitHubRestApiGetReleases
         }
         $response = Invoke-RestMethod @params
 
-        # Aggregate the download count of each release.
-        $response | ForEach-Object -Process {
-            $release = $_
-            if (-not $release.draft) {
-                $result.DownloadCount += [int] ($release.assets | Measure-Object -Sum -Property 'download_count').Sum
-            }
+        # The download count of a specific asset of a release.
+        if ((-not [string]::IsNullOrWhiteSpace($TagName)) -and (-not [string]::IsNullOrWhiteSpace($AssetName))) {
+            $targetRelease = $response | Where-Object -FilterScript { $_.tag_name -eq $TagName }
+            $targetAsset = $targetRelease.assets | Where-Object -FilterScript { $_.name -eq $AssetName }
+            $result.DownloadCount = $targetAsset.download_count
+        }
+
+        # Aggregate the download count of all assets of a release.
+        elseif ((-not [string]::IsNullOrWhiteSpace($TagName)) -and [string]::IsNullOrWhiteSpace($AssetName)) {
+            $targetRelease = $response | Where-Object -FilterScript { $_.tag_name -eq $TagName }
+            $result.DownloadCount = [int] ($targetRelease.assets | Measure-Object -Sum -Property 'download_count').Sum
+        }
+
+        # Aggregate the download count of all releases.
+        else {
+            $allAssets = $response | Where-Object -FilterScript { -not $_.draft } | ForEach-Object -Process { $_.assets }
+            $result.DownloadCount = [int] ($allAssets | Measure-Object -Sum -Property 'download_count').Sum
         }
     }
     catch {
