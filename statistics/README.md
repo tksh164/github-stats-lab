@@ -2,10 +2,10 @@
 
 | Repository | :speech_balloon: | :page_with_curl: | :star: | :trident: | :telescope: | :eyes: | :bust_in_silhouette: | :arrow_down: |
 | ---- | ---- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 18 | 3 | 1 | 105 | 46 | 424 |
-| [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 2 | 2 | 60 | 9 | 3736 |
-| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 22 | 2 | 1 | 35 | 16 | 241 |
-| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 4 | 1 | 2 | 45 | 11 | Azure Local: 6 <br/> WS HCI: 9 <br/> Total: 15 |
+| [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 18 | 3 | 1 | 97 | 42 | 425 |
+| [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 2 | 2 | 27 | 10 | 3738 |
+| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 22 | 2 | 1 | 34 | 15 | 241 |
+| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 4 | 1 | 2 | 43 | 10 | Azure Local: 7 <br/> WS HCI: 12 <br/> Total: 19 |
 | [Telemetry](https://github.com/tksh164/telemetry) |  |  | 0 | 0 | 0 | 0 | 0 | 1 |
 
 - :speech_balloon: - Description of the repository.
