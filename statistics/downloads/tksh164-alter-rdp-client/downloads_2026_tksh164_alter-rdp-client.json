@@ -6298,5 +6298,40 @@
     "date": "2026-06-29",
     "tagName": "v0.7.0",
     "downloadCount": 61
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.1.0",
+    "downloadCount": 7
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.2.0",
+    "downloadCount": 40
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.3.0",
+    "downloadCount": 46
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.4.0",
+    "downloadCount": 63
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.5.0",
+    "downloadCount": 99
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.6.0",
+    "downloadCount": 138
+  },
+  {
+    "date": "2026-06-30",
+    "tagName": "v0.7.0",
+    "downloadCount": 61
   }
 ]
