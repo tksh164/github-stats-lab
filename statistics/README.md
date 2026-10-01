@@ -2,9 +2,9 @@
 
 | Repository | :speech_balloon: | :page_with_curl: | :star: | :trident: | :telescope: | :eyes: | :bust_in_silhouette: | :arrow_down: |
 | ---- | ---- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 20 | 3 | 1 | 50 | 28 | 498 |
-| [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 3 | 2 | 36 | 17 | 3847 |
-| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 27 | 2 | 1 | 56 | 20 | 377 |
+| [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 20 | 3 | 1 | 48 | 29 | 498 |
+| [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 3 | 2 | 25 | 14 | 3848 |
+| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 28 | 2 | 1 | 73 | 25 | 377 |
 | [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 6 | 2 | 2 | 69 | 12 | Azure Local: 89 <br/> WS HCI: 49 <br/> Total: 138 |
 
 - :speech_balloon: - Description of the repository.
