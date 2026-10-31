@@ -5,7 +5,7 @@
 | [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 20 | 3 | 1 | 38 | 38 | 503 |
 | [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 3 | 2 | 59 | 28 | 3889 |
 | [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 33 | 3 | 1 | 65 | 32 | 407 |
-| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 7 | 2 | 2 | 65 | 34 | Azure Local: 95 <br/> WS HCI: 51 <br/> Total: 146 |
+| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 7 | 2 | 2 | 66 | 35 | Azure Local: 95 <br/> WS HCI: 51 <br/> Total: 146 |
 
 - :speech_balloon: - Description of the repository.
 - :page_with_curl: - The main language of the repository.
