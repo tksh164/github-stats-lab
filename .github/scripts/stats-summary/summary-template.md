@@ -15,3 +15,50 @@
 - :eyes: - The total views in last 14 days of the repository.
 - :bust_in_silhouette: - The unique visitors in last 14 days of the respository.
 - :arrow_down: - The total download count so far of the released assets of the repository.
+
+## [Alter](https://github.com/tksh164/alter-rdp-client)
+
+- :speech_balloon: Description of the repository: {{github:repo/tksh164/alter-rdp-client/description}}
+- :page_with_curl: The main language of the repository: {{github:repo/tksh164/alter-rdp-client/language}}
+- :star: The star count of the repository: {{github:repo/tksh164/alter-rdp-client/starsCount}}
+- :trident: The fork count of the respository: {{github:repo/tksh164/alter-rdp-client/forksCount}}
+- :telescope: The watching count of the repository: {{github:repo/tksh164/alter-rdp-client/watchingCount}}
+- :eyes: The total views in last 14 days of the repository: {{github:repo/tksh164/alter-rdp-client/totalViews}}
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: {{github:repo/tksh164/alter-rdp-client/uniqueVisitors}}
+- :arrow_down: The total download count so far of the released assets of the repository: {{github:repo/tksh164/alter-rdp-client/downloadCount}}
+
+## [Displayscope](https://github.com/tksh164/displayscope)
+
+- :speech_balloon: Description of the repository: {{github:repo/tksh164/displayscope/description}}
+- :page_with_curl: The main language of the repository: {{github:repo/tksh164/displayscope/language}}
+- :star: The star count of the repository: {{github:repo/tksh164/displayscope/starsCount}}
+- :trident: The fork count of the respository: {{github:repo/tksh164/displayscope/forksCount}}
+- :telescope: The watching count of the repository: {{github:repo/tksh164/displayscope/watchingCount}}
+- :eyes: The total views in last 14 days of the repository: {{github:repo/tksh164/displayscope/totalViews}}
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: {{github:repo/tksh164/displayscope/uniqueVisitors}}
+- :arrow_down: The total download count so far of the released assets of the repository: {{github:repo/tksh164/displayscope/downloadCount}}
+
+## [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools)
+
+- :speech_balloon: Description of the repository: {{github:repo/tksh164/aumid-stopgap-tools/description}}
+- :page_with_curl: The main language of the repository: {{github:repo/tksh164/aumid-stopgap-tools/language}}
+- :star: The star count of the repository: {{github:repo/tksh164/aumid-stopgap-tools/starsCount}}
+- :trident: The fork count of the respository: {{github:repo/tksh164/aumid-stopgap-tools/forksCount}}
+- :telescope: The watching count of the repository: {{github:repo/tksh164/aumid-stopgap-tools/watchingCount}}
+- :eyes: The total views in last 14 days of the repository: {{github:repo/tksh164/aumid-stopgap-tools/totalViews}}
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: {{github:repo/tksh164/aumid-stopgap-tools/uniqueVisitors}}
+- :arrow_down: The total download count so far of the released assets of the repository: {{github:repo/tksh164/aumid-stopgap-tools/downloadCount}}
+
+## [HCI Lab](https://github.com/tksh164/hci-lab)
+
+- :speech_balloon: Description of the repository: {{github:repo/tksh164/hci-lab/description}}
+- :page_with_curl: The main language of the repository: {{github:repo/tksh164/hci-lab/language}}
+- :star: The star count of the repository: {{github:repo/tksh164/hci-lab/starsCount}}
+- :trident: The fork count of the respository: {{github:repo/tksh164/hci-lab/forksCount}}
+- :telescope: The watching count of the repository: {{github:repo/tksh164/hci-lab/watchingCount}}
+- :eyes: The total views in last 14 days of the repository: {{github:repo/tksh164/hci-lab/totalViews}}
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: {{github:repo/tksh164/hci-lab/uniqueVisitors}}
+- :arrow_down: The total download count so far of the released assets of the repository: 
+    - Total: {{github:repo/tksh164/hci-lab/downloadCount/telemetry}}
+    - Azure Local: {{github:repo/tksh164/hci-lab/downloadCount/telemetry/azloc}}
+    - WS HCI: {{github:repo/tksh164/hci-lab/downloadCount/telemetry/wshci}}
