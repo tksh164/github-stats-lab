@@ -3,9 +3,9 @@
 | Repository | :speech_balloon: | :page_with_curl: | :star: | :trident: | :telescope: | :eyes: | :bust_in_silhouette: | :arrow_down: |
 | ---- | ---- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | [Alter](https://github.com/tksh164/alter-rdp-client) | Alter is a remote desktop client application. | C# | 20 | 3 | 1 | 37 | 36 | 507 |
-| [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 3 | 2 | 85 | 33 | 3904 |
-| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 33 | 3 | 1 | 59 | 31 | 409 |
-| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 7 | 2 | 2 | 80 | 36 | Azure Local: 96 <br/> WS HCI: 52 <br/> Total: 150 |
+| [Displayscope](https://github.com/tksh164/displayscope) | 🔭 Displayscope enables to use the apps on the out of sight screen. | TypeScript | 22 | 3 | 2 | 83 | 34 | 3905 |
+| [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools) | The AppUserModelID Stopgap Tools allow you to pin the same application with different parameters and control their grouping on the taskbar. | C++ | 33 | 3 | 1 | 60 | 32 | 410 |
+| [HCI Lab](https://github.com/tksh164/hci-lab) | The HCI Lab provides a plain Azure Local & Windows Server 2025/2022 HCI lab environment on Azure with reasonable preparation time & cost. | PowerShell | 7 | 2 | 2 | 82 | 37 | Azure Local: 96 <br/> WS HCI: 52 <br/> Total: 150 |
 
 - :speech_balloon: - Description of the repository.
 - :page_with_curl: - The main language of the repository.
@@ -34,9 +34,9 @@
 - :star: The star count of the repository: 22
 - :trident: The fork count of the respository: 3
 - :telescope: The watching count of the repository: 2
-- :eyes: The total views in last 14 days of the repository: 85
-- :bust_in_silhouette: The unique visitors in last 14 days of the respository: 33
-- :arrow_down: The total download count so far of the released assets of the repository: 3904
+- :eyes: The total views in last 14 days of the repository: 83
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: 34
+- :arrow_down: The total download count so far of the released assets of the repository: 3905
 
 ## [AppUserModelID Stopgap Tools](https://github.com/tksh164/aumid-stopgap-tools)
 
@@ -45,9 +45,9 @@
 - :star: The star count of the repository: 33
 - :trident: The fork count of the respository: 3
 - :telescope: The watching count of the repository: 1
-- :eyes: The total views in last 14 days of the repository: 59
-- :bust_in_silhouette: The unique visitors in last 14 days of the respository: 31
-- :arrow_down: The total download count so far of the released assets of the repository: 409
+- :eyes: The total views in last 14 days of the repository: 60
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: 32
+- :arrow_down: The total download count so far of the released assets of the repository: 410
 
 ## [HCI Lab](https://github.com/tksh164/hci-lab)
 
@@ -56,8 +56,8 @@
 - :star: The star count of the repository: 7
 - :trident: The fork count of the respository: 2
 - :telescope: The watching count of the repository: 2
-- :eyes: The total views in last 14 days of the repository: 80
-- :bust_in_silhouette: The unique visitors in last 14 days of the respository: 36
+- :eyes: The total views in last 14 days of the repository: 82
+- :bust_in_silhouette: The unique visitors in last 14 days of the respository: 37
 - :arrow_down: The total download count so far of the released assets of the repository: 
     - Total: 150
     - Azure Local: 96
